@@ -1,0 +1,12 @@
+2026-06-15 16:56:18,302 WARNING  passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\mlala\OneDrive\Рабочий стол\Todo_API\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-15 16:58:12,047 INFO     routers.auth: User alibek@gmail.com registrated!
+2026-06-15 16:59:01,426 INFO     routers.auth: User sultan@gmail.com registrated!
+2026-06-15 17:08:26,815 ERROR    dependencies: User sultan@gmail.com havent access admin!
+2026-06-15 18:10:33,853 WARNING  slowapi: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /auth/login
+2026-06-15 18:10:37,218 WARNING  slowapi: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /auth/login
+2026-06-15 18:10:37,711 WARNING  slowapi: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /auth/login
