@@ -13,7 +13,7 @@ router=APIRouter(
 )
 logger=logging.getLogger(__name__)
 @router.post("/register",response_model=UserResponse,status_code=201)
-@limiter.limit("3/minute")
+@limiter.limit("10/minute")
 def registration(request:Request,user:UserCreate,db:Session=Depends(get_db)):
     db_user=db.query(User).filter(User.email==user.email).first()
     if db_user:

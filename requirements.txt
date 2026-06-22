@@ -8,4 +8,6 @@ pydantic==2.13.4
 pydantic-settings==2.14.1
 passlib[crypt]
 fastapi==0.137.0
+httpx==0.28.1
+pytest==9.1.1
 psycopg2-binary==2.9.12

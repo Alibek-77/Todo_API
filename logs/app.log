@@ -15,3 +15,5 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-06-19 13:05:56,579 INFO     routers.auth: User dameli@gmail.com registrated!
 2026-06-19 13:06:25,067 ERROR    dependencies: User dameli@gmail.com havent access admin!
 2026-06-22 11:38:34,363 INFO     application.routers.auth: User strinsdfg registrated!
+2026-06-22 13:01:41,726 INFO     application.routers.auth: User string registrated!
+2026-06-22 13:02:12,658 ERROR    application.routers.auth: User test@mail.com has already registrated

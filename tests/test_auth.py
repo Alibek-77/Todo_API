@@ -8,7 +8,7 @@ def test_register():
     })
     assert response.status_code==201
     assert response.json()["email"]=="test@mail.com"
-def test_login():
+def test_login_success():
     response=client.post("/auth/login",json={
         "email":"test@mail.com",
         "password":"qwerty123"
