@@ -1,10 +1,10 @@
 from fastapi import Depends,APIRouter,HTTPException,status,Request
-from auth import hash_password,create_token,verify_password
-from schemas import UserCreate,UserResponse,TokenResponse
+from app.auth import hash_password,create_token,verify_password
+from app.schemas import UserCreate,UserResponse,TokenResponse
 from sqlalchemy.orm import Session
-from database import get_db
-from models import User
-from limiter import limiter
+from app.database import get_db
+from app.models import User
+from app.limiter import limiter
 from fastapi.security import OAuth2PasswordRequestForm
 import logging
 router=APIRouter(

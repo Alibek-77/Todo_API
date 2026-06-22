@@ -10,3 +10,7 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-06-15 18:10:33,853 WARNING  slowapi: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /auth/login
 2026-06-15 18:10:37,218 WARNING  slowapi: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /auth/login
 2026-06-15 18:10:37,711 WARNING  slowapi: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /auth/login
+2026-06-18 12:03:52,692 INFO     routers.auth: User adilet@gmail.com registrated!
+2026-06-18 12:52:24,322 INFO     routers.auth: User akira@gmail.com registrated!
+2026-06-19 13:05:56,579 INFO     routers.auth: User dameli@gmail.com registrated!
+2026-06-19 13:06:25,067 ERROR    dependencies: User dameli@gmail.com havent access admin!
