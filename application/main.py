@@ -1,11 +1,11 @@
 from fastapi import FastAPI
-from app.routers import auth
-from app.database import Base,engine
-from app.routers import todos
+from application.routers import auth
+from application.database import Base,engine
+from application.routers import todos
 from pathlib import Path
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
-from app.limiter import limiter
+from application.limiter import limiter
 import logging
 app=FastAPI(title="Student API",description="API for control students",version="1.0.0")
 app.state.limiter=limiter

@@ -1,11 +1,11 @@
 from fastapi import Depends,APIRouter,HTTPException,status,Request
-from app.schemas import TodoCreate,TodoResponse,UserResponse,TodoUpdate
+from application.schemas import TodoCreate,TodoResponse,UserResponse,TodoUpdate
 from sqlalchemy.orm import Session
-from app.database import get_db
-from app.models import User,Todo
+from application.database import get_db
+from application.models import User,Todo
 from typing import List
-from app.limiter import limiter
-from app.dependencies import get_current_user,require_admin
+from application.limiter import limiter
+from application.dependencies import get_current_user,require_admin
 import logging
 router=APIRouter(
     tags=["Todos"],
